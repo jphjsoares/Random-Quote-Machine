@@ -26,8 +26,9 @@
             <p id="quote-author"></p>
           </div>
           <div id="buttons">
-            <a href="#" target="_blank" id="tweet-this"><button type="button" id="tweet">Tweet me!</button></a>
-            <button type="button" name="button" id="new-quote">New Quote!</button>
+            <a href="#" target="_blank" id="tweet-this"><button type="button" id="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Tweet</button></a>
+
+            <button type="button" name="button" id="new-quote"><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;Quote</button>
           </div>
         </div>
       </div>
@@ -39,6 +40,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
+
       function randomQuote() {
         $.ajax({
           url: "https://api.forismatic.com/api/1.0/?",
@@ -56,7 +58,9 @@
       $("#new-quote").click(function(){
         randomQuote();
       });
-    });
+
+
+    });//End of document function
     </script>
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="./_scripts/fontawesome.js"></script>

@@ -10,11 +10,15 @@ a, a:hover {
 
 .title {
   font-family: 'Acme', sans-serif;
+  color:#1E97D3;
 }
 
+#icon {
+    color:#1E97D3;
+}
 
 #quote-window {
-  background: #E8E8E8;
+  background: #F9F9F9;
 }
 
 
@@ -27,10 +31,12 @@ a, a:hover {
   font-style: italic;
   font-size: 25px;
   font-weight: bold;
+  color: #1E97D3;
 }
 
+
 #buttons {
-  background: #E8E8E8;
+  background: #F9F9F9;
   margin-top: 40px;
   font-size: 20px;
   padding: 10px 10px 10px 10px;
@@ -38,17 +44,19 @@ a, a:hover {
 
 
 #new-quote {
+  color: white;
   float: right;
-  background: white;
+  background: #1E97D3;
   border: none;
-  border-radius: 10%;
-  width: 90px;
+  border-radius: 5%;
+  width: 100px;
 }
 
 #tweet {
+  color: white;
   float: left;
-  background: white;
+  background: #1E97D3;
   border: none;
-  border-radius: 10%;
+  border-radius: 5%;
   width: 90px
 }
