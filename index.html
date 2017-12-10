@@ -33,35 +33,13 @@
         </div>
       </div>
       <footer>
+        <p>Built with <a href="https://forismatic.com/en/" class="withHover">Forismatic API</a></p>
         <p>by:</p>
         <p>José Soares - 2017</p>
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-
-      function randomQuote() {
-        $.ajax({
-          url: "https://api.forismatic.com/api/1.0/?",
-          dataType: "jsonp",
-          data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
-          success: function( response ) {
-            $("#quote-content").html("<p id='quote-content'>" + response.quoteText + "</p><br/><p id='quote-author'>&dash;" + response.quoteAuthor + "</p>");
-            $("#tweet-this").attr("href", "https://twitter.com/home/?status=" + response.quoteText + ' (' + response.quoteAuthor + ')');
-          }
-        });
-      }
-      $(function() {
-        randomQuote();
-      });
-      $("#new-quote").click(function(){
-        randomQuote();
-      });
-
-
-    });//End of document function
-    </script>
+    <script src="./_javascript/APILogic.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="./_scripts/fontawesome.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

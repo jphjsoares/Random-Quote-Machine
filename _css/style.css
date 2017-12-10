@@ -58,5 +58,19 @@ a, a:hover {
   background: #1E97D3;
   border: none;
   border-radius: 5%;
-  width: 90px
+  width: 100px
+}
+
+footer {
+  color: #b9b9b9;
+  font-weight: 100; 
+}
+
+footer a {
+  color: #b9b9b9;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #b9b9b9;
 }
